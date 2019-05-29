@@ -1,0 +1,49 @@
+<view class="song-home">
+  <input type="text" placeholder="搜索钢琴曲"></input>
+  <image src="http://127.0.0.1:3000/img/song/search.png"></image>
+  <view>
+    <view class="listen">
+      <audio src="http://127.0.0.1:3000/audio/bg.mp3"></audio>
+      <view class="play">
+        <image src="http://127.0.0.1:3000/img/song/default_live_thumb.png"></image>
+        <image src="http://127.0.0.1:3000//img/song/d_song.png"></image>
+      </view>
+      <text>命运交响曲——Bel Suono</text>
+      <view>
+        <image src="http://127.0.0.1:3000//img/song/notice_next.png"></image>
+      </view>
+    </view> 
+
+    <view class="slider">
+      <swiper autoplay="{{autoplay}}" interval="{{interval}}">
+        <swiper-item wx:for="{{list}}" wx:key="index">
+          <image src="{{item.img_url}}" lazy-load="true" mode="aspectFill"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+      <!--九宫格-->
+    <view>
+      <view>
+      <image src="http://127.0.0.1:3000/img/song/do_belong.png"></image>
+      钢琴曲
+      </view>
+      <text>更多 ></text>
+    </view>
+    <view class="index-nav">
+     <view class="nav-item" wx:for="{{navlist}}" wx:key="index">
+       <text>{{item.title}}</text>
+     </view>
+    </view>
+  </view>
+
+  <!--推荐-->
+  <view>推荐</view>
+  <view class="list">
+    <view>
+      <text>你要的全拿走——胡彦斌</text>
+      <view>
+        <image src="http://127.0.0.1:3000/img/song/icon_d_song.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

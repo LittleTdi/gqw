@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/song/song",
+    "pages/index/index",
+    "pages/score/score",
+    "pages/person/person",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "环球钢琴网",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "list":[
+        {
+        "pagePath":"pages/song/song",
+        "text":"钢琴曲",
+        "iconPath":"pages/img/tabbar/icon_index_ss.png",
+        "selectedIconPath":"pages/img/tabbar/icon_index_ss_r.png"
+        },
+        {
+          "pagePath": "pages/score/score",
+          "text": "钢琴谱",
+          "iconPath": "pages/img/tabbar/icon_index_news.png",
+          "selectedIconPath": "pages/img/tabbar/icon_index_news_r.png"
+        },
+        {
+          "pagePath": "pages/person/person",
+          "text": "我的",
+          "iconPath": "pages/img/tabbar/icon_index_mine.png",
+          "selectedIconPath": "pages/img/tabbar/icon_index_mine_r.png"
+        }
+    ]
+  }
+}

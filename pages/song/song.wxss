@@ -1,0 +1,148 @@
+
+view.song-home{
+  background:#333;
+  height:65rpx;
+  position:relative;
+}
+view.song-home>input{
+  height:20rpx;
+  width:90%;
+  background:#fff;
+  background-size:40rpx 40rpx;
+  margin:auto;
+  border-radius:10rpx;
+  font-size:28rpx;
+  padding-left:40rpx;
+}
+view.song-home>image{
+  position:absolute;
+  width:20px;
+  height:20px;
+  top:4px;
+  left:10px;
+}
+view.song-home .listen{
+  display:flex;
+  justify-content:left;
+  padding:0 20rpx;
+  background:#fff;
+  margin-top:25rpx;
+}
+view.song-home .listen>.play{
+  position:relative;
+  margin-right:30rpx;
+  margin-left:20rpx;
+}
+view.song-home .listen>.play>image:first-child{
+  width:80rpx;
+  height:80rpx;
+}
+view.song-home .listen>view.play>image:last-child{
+  width:25rpx;
+  height:25rpx;
+  position:absolute;
+  left:35%;
+  top:30%;
+}
+view.song-home .listen>view:last-child>image{
+  margin-top:26rpx;
+  width:40rpx;
+  height:40rpx;
+  margin-left:150rpx;
+}
+view.song-home .listen>text{
+  font-size:30rpx;
+  margin-top:22rpx;
+}
+view.song-home>view{
+  background:#f2f2f2;
+}
+view.slider{
+  width:100%;
+  margin:15rpx 0;
+}
+view.slider image{
+  width:100%;
+  height:100%;
+}
+
+/*2:九宫格*/
+.index-nav{
+  display: flex;   /*弹性布局*/
+  flex-wrap: wrap; /*子元素换行显示*/
+  margin:0 10rpx;
+}
+.index-nav .nav-item{
+   width:33.33333%;     /*商品宽度*/
+   height:200rpx;       /*商品高度*/
+   box-sizing: border-box;
+   display: flex;       /*当前元素弹性布局*/
+   flex-direction: column; /*元素按列排整*/
+   justify-content: center;/*水平居中*/
+   align-items: center;    /*垂直居中*/
+   font-size:14px;
+   /*右侧底部边线 3 6 去除右侧边线*/
+   border-bottom:1rpx solid #ccc;
+   border-right:1rpx solid #ccc;
+   background:#fff;
+}
+/*去除右侧 3 6 9 边线*/
+.index-nav .nav-item:nth-child(3n){
+  border-right: 0;
+}
+.index-nav .nav-item:nth-child(2),
+.index-nav .nav-item:nth-child(3),
+.index-nav .nav-item:first-child{
+  border-top:1rpx solid #ccc;
+}
+.index-nav .nav-item:nth-child(4),
+.index-nav .nav-item:nth-child(5),
+.index-nav .nav-item:nth-child(6){
+  margin-bottom:15rpx;
+  border-bottom:0;
+}
+view.song-home>view>view:nth-child(3){
+  display:flex;
+  justify-content: space-between;
+  margin:0 10rpx;
+  background:#fff;
+  padding:15rpx 15rpx 0 15rpx;
+}
+view.song-home>view>view:nth-child(3)>view>image{
+  width:35rpx;
+  height:45rpx;
+}
+view.song-home>view>view:nth-child(3)>view{
+  font-size:30rpx;
+}
+view.song-home>view>view:nth-child(3)>text{
+  font-size:28rpx;
+  color:#888;
+}
+
+view.song-home>view:nth-child(4){
+  font-size:35rpx;
+  padding:10rpx 0 10rpx 15rpx;
+  background:#fff;
+}
+view.song-home .list>view{
+  display:flex;
+  justify-content: space-between;
+  padding:10rpx 25rpx;
+  background:#fff;
+  border-top:1px solid #ddd;
+}
+view.song-home .list>view text{
+  font-size:30rpx;
+}
+view.song-home .list>view image{
+  width:30rpx;
+  height:30rpx;
+}
+view.song-home .list>view>view{
+  width:40rpx;
+  height:40rpx;
+  border:1px #ddd solid;
+  border-radius:50%;
+  padding:3rpx;
+}
